@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styl.css">
+    <title>Sklep</title>
+</head>
+<body>
+    <div id="baner">
+        <h1>Ozdoby-sklep</h1>
+    </div>
+
+    <div id="lewy">
+        <h2>OZDOBY</h2>
+        <a href="galeria.html">Galeria</a>
+        <a href="zamowienie.php">Zamówienie</a>
+    </div>
+
+    <div id="srodkowy">
+        <img src="choinka.jpg" alt="ozdoby choinkowe"id="choinka" onmouseover="najedz('choinka')">
+        <img src="mikolaj.jpg"alt="ozdoby choinkowe"id="mikolaj" onmouseover="najedz('mikolaj')">
+        <img src="renifer.jpg"alt="ozdoby choinkowe"id="renifer" onmouseover="najedz('renifer')"> 
+        <br><p>wybierz ozdobę w kółku</p>  
+        <script>
+            var p;
+            function najedz(p)
+            {
+      
+            if(p=="choinka")
+            {
+                skrypt.innerHTML="Wybrałeś choinkę. Cena 10 zł";
+            }
+            if(p=="mikolaj")
+            {
+                skrypt.innerHTML="Wybrałeś mikołaja. Cena 12 zł";
+            }
+            if(p=="renifer")
+            {
+                skrypt.innerHTML="Wybrałeś renifera. Cena 8 zł";
+            }
+            }
+        </script> 
+        <p id="skrypt"></p>    
+    </div>
+
+    <div id="prawy">
+       <img src="animacja.gif" >
+       
+    </div>
+
+    <footer>
+        <h3>Autor strony:000000000000</h3>
+    </footer>
+</body>
+</html>
